@@ -1,0 +1,206 @@
+\documentclass[12pt,twoside]{report}
+
+%-----------------PREAMBLE--------------------
+% Document Formatting
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{fourier}
+\usepackage{fancyhdr}
+
+% Preamble for references 
+%\usepackage{fancyref}
+\usepackage{hyperref}
+\usepackage{apacite}
+
+% Formatting Preamble
+\usepackage[top=1.5in, bottom=1in, left=1in, right=1in]{geometry}
+
+% Graphics Preamble
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[font={small}, hang]{caption}
+
+% Mathematics Preamble
+\usepackage{amsmath}
+\newcommand{\R}{\mathbb{R}}
+
+% Other
+\usepackage{gensymb}  %inserts degree 
+\usepackage[inline, shortlabels]{enumitem} % letter type of listing (a)..(b)..
+
+% Document
+%\title{\textbf{Fuzzy-Kappa map comparison to assess the performance of hydro-morphodynamic models}}
+\title{\textbf{Name of the Thesis}}
+\author{Student's name}
+
+% Macros
+\def\rmse{Root Mean Squared Error}
+
+
+%-----------------DOCUMENT BEGIN----------------
+\begin{document}
+
+\input{titlepage}
+\clearpage
+
+\pagenumbering{roman}
+\chapter*{Acknowledgements}
+{
+
+}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\chapter*{Abstract}
+{
+
+}
+\addcontentsline{toc}{chapter}{Abstract}
+
+% List of contents, figures and tables
+\tableofcontents
+\clearpage
+
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+
+% Beginning of chapters
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\nouppercase{\leftmark}}
+\fancyhead[RE,LO]{\nouppercase{\rightmark}}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{1.0pt}
+
+\chapter{Introduction}
+\label{ch:introduction}
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+
+
+
+	\section{Background}
+	\label{subsec:background}
+	write here
+
+	\section{Something Location}
+	\label{subsec:somelocation}
+
+	write here
+
+	See more in ~\autoref{subsec:background}
+	write here
+	
+	\begin{center}
+	\end{center}
+	
+\chapter{State-of-the-art}
+\label{ch:stateart}
+	\section{Previous works}
+	\label{sec:prevworks}
+	{
+	As explained in section~\ref{sec:notlogic}
+	}
+	
+	\section{Types of Something}
+	\label{sec:typesome}
+	{
+	}
+		
+		\subsection{somethingsomething}
+		\label{subsec:somesome}
+		{
+		As the Table~\ref{tb:typesomething} shows.
+		}
+		\subsection{somethingnothing}
+		\label{subsec:somenoth}
+		{
+        \begin{table}[]
+            \centering
+            \begin{tabular}{ll}
+            \hline
+            \textbf{Thing} & \textbf{Utilization} \\
+            \hline
+                something & something \\
+                something & something \\
+                something & something \\
+                \hline
+            \end{tabular}
+            \caption{Types of something}
+            \label{tb:typesomething}
+        \end{table}
+		}
+	\section{Something Statistics}
+	\label{sec:somestatistics}
+	{
+		As shown in Equation~\ref{eq:happiness}
+		\begin{equation}\label{eq:happiness}
+			happiness=\frac{EmptyCup+coffee}{EmptyCups}
+		\end{equation}	
+	}
+	
+ 	\section{Nothing Logic}
+	\label{sec:notlogic}
+	{
+		\subsection{The logic underlying something}
+		\label{subsec:logicunderlying}
+    	{
+    	}
+    	
+		\subsection{Concepts and terminology}
+		\label{subsec:conceptsterm}	
+		{
+    		\subsubsection*{Something set rules}
+    		{
+    		Understanding the semantics of something
+    		
+    		}
+		}
+		
+        
+    }
+	\section{Something or nothing?}
+	\label{sec:someornot}
+	{
+    	\subsubsection{Don't use drugs}
+    	{
+    	}
+    	\subsubsection{Never}	
+    	{
+    	}
+    	
+    	\subsubsection{and Write happily!}
+    	{
+    	
+    	}
+    }
+
+	
+\chapter{Methods}
+\label{ch:methods}
+
+\chapter{Results}
+\label{ch:results}
+
+\chapter{Discussion}
+\label{ch:discussion}
+
+\chapter{Conclusions}
+\label{ch:conclusion}
+{
+More information is provided by other sources \cite{mittelbach2004latex, goossens1994latex}.
+}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\nouppercase{\rightmark}}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{1.0pt}
+
+\bibliographystyle{apacite}
+\bibliography{References}
+
+\end{document}
