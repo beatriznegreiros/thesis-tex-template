@@ -8,4 +8,4 @@ This repository contains tex templates for writing a master thesis in the usual 
 
 ### Usage
 - For Overleaf: Download this Github repo as zip file and upload the whole folder as a new project in Overleaf
-- For a local compiler: Download this Github repo or clone the repository with ´´git clone https://github.com/beatriznegreiros/Master_Thesis_Template.git´´
+- For a local compiler: Download this Github repo or clone the repository with ```git clone https://github.com/beatriznegreiros/Master_Thesis_Template.git```
