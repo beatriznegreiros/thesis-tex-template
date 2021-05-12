@@ -1,0 +1,126 @@
+%======================================================================
+% University of Stuttgart Template for LaTeX 
+% Last Updated April, 2021 
+% by Beatriz Negreiros
+
+% DISCLAIMER
+% To the best of the Author's knowledge, this template satisfies the current University of Stuttgart thesis requirements.
+% However, it is your responsibility to assure that you have met all requirements of the University and your particular department.
+% Also note that there are explanatory comments and tips throughout this template.
+%======================================================================
+
+\documentclass[12pt,twoside]{report}
+
+%-----------------PREAMBLE------------------------------
+% Document Formatting
+\usepackage[english]{babel}
+\usepackage{microtype}
+\usepackage{parskip}
+\usepackage{fourier}
+\usepackage{fancyhdr}
+
+% Preamble for references 
+%\usepackage{fancyref}
+\usepackage{hyperref}
+\usepackage{apacite}
+
+% Formatting Preamble
+\usepackage[top=1.5in, bottom=1in, left=1in, right=1in]{geometry}
+
+% Graphics Preamble
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[font={small}, hang]{caption}
+
+% Mathematics Preamble
+\usepackage{amsmath}
+\newcommand{\R}{\mathbb{R}}
+
+% Other
+\usepackage{gensymb}  %inserts degree 
+\usepackage[inline, shortlabels]{enumitem} % letter type of listing (a)..(b)..
+
+% Document
+%\title{\textbf{Fuzzy-Kappa map comparison to assess the performance of hydro-morphodynamic models}}
+\title{\textbf{[Name of the Thesis]}}
+\author{[Student name]}
+
+% Macros - here you can define macros for shortening the writing of large words, for instance:
+\def\rmse{Root Mean Squared Error}
+
+
+% Begin of document
+%======================================================================
+\begin{document}
+
+\input{titlepage}
+
+\clearpage
+
+\pagenumbering{roman}
+
+
+\chapter*{Acknowledgements}
+{
+
+}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+
+\chapter*{Abstract}
+{
+
+}
+\addcontentsline{toc}{chapter}{Abstract}
+
+% List of contents, figures and tables
+\tableofcontents
+\clearpage
+
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+
+% Beginning of chapters
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\nouppercase{\leftmark}}
+\fancyhead[RE,LO]{\nouppercase{\rightmark}}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{1.0pt}
+
+\input{TexCodes/introduction}
+	
+\input{TexCodes/state_of_art}
+
+\input{TexCodes/methods}	
+
+\input{TexCodes/results}
+
+\input{TexCodes/discussion}
+
+\input{TexCodes/conclusions}
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\nouppercase{\rightmark}}
+\fancyfoot[LE,RO]{\thepage}
+\renewcommand{\headrulewidth}{1.0pt}
+
+\bibliographystyle{apacite}
+\bibliography{References}
+
+
+% The \appendix statement indicates the beginning of the appendices.
+\appendix
+% Add an un-numbered title page before the appendices and a line in the Table of Contents
+\chapter*{Appendices}
+\addcontentsline{toc}{chapter}{Appendices}
+% Appendices are just more chapters, with different labeling (letters instead of numbers).
+\input{appendix.tex}
+
+\input{TexCodes/appendix}
+
+\end{document}
