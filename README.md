@@ -4,7 +4,7 @@ This repository contains tex templates for writing a master thesis in the usual 
 ### Attention!
 - By using this template one is not exempted of checking for mistakes or adapting for other preferences. 
 - The owner of this repository does not hold legal responsability for its implementation. However, improvements and constructive feedback is more than welcomed. :)
-- Check the license for more informations.
+- Check the license for more information.
 
 ### Usage
 - For Overleaf: Download this Github repo as zip file and upload the whole folder as a new project in Overleaf
