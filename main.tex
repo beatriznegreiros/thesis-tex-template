@@ -1,7 +1,7 @@
 %======================================================================
-% University of Stuttgart Template for LaTeX 
-% Last Updated April, 2021 
-% by Beatriz Negreiros
+% LaTeX template for MSc. and BSc. Thesis for the Department of Hydraulic Engineering and Water Resources Management (University of Stuttgart)
+% Latest release: October 2021
+% Author: Beatriz Negreiros
 
 % DISCLAIMER
 % To the best of the Author's knowledge, this template satisfies the current University of Stuttgart thesis requirements.
@@ -9,9 +9,9 @@
 % Also note that there are explanatory comments and tips throughout this template.
 %======================================================================
 
-\documentclass[12pt,twoside]{report}
+\documentclass[12pt,twoside]{report}	
 
-%-----------------PREAMBLE------------------------------
+%===============================BEGINNING OF PREAMBEL=======================================
 % Document Formatting
 \usepackage[english]{babel}
 \usepackage{microtype}
@@ -19,7 +19,7 @@
 \usepackage{fourier}
 \usepackage{fancyhdr}
 
-% Preamble for references 
+% Referencing
 %\usepackage{fancyref}
 \usepackage{hyperref}
 \usepackage{apacite}
@@ -41,16 +41,20 @@
 \usepackage[inline, shortlabels]{enumitem} % letter type of listing (a)..(b)..
 
 % Document
-%\title{\textbf{Fuzzy-Kappa map comparison to assess the performance of hydro-morphodynamic models}}
-\title{\textbf{[Name of the Thesis]}}
-\author{[Student name]}
+\title{\textbf{Name of the Thesis}} % enter the titlename of your thesis here
+\author{Student name} % enter your name
 
 % Macros - here you can define macros for shortening the writing of large words, for instance:
 \def\rmse{Root Mean Squared Error}
+\def\std{Standard Deviation}
 
 
-% Begin of document
-%======================================================================
+%===============================END OF PREAMBEL=======================================
+
+
+
+
+%============================BEGIN OF DOCUMENT ==========================================
 \begin{document}
 
 \input{titlepage}
@@ -60,15 +64,15 @@
 \pagenumbering{roman}
 
 
-\chapter*{Acknowledgements}
+\chapter*{Acknowledgments}
 {
-
+add your Acknowledgments
 }
 \addcontentsline{toc}{chapter}{Acknowledgements}
 
 \chapter*{Abstract}
 {
-
+Abstracts should not be more than one page.
 }
 \addcontentsline{toc}{chapter}{Abstract}
 
@@ -90,17 +94,17 @@
 \fancyfoot[LE,RO]{\thepage}
 \renewcommand{\headrulewidth}{1.0pt}
 
-\input{TexCodes/introduction}
+\input{introduction}
 	
-\input{TexCodes/state_of_art}
+\input{state_of_art}
 
-\input{TexCodes/methods}	
+\input{methods}	
 
-\input{TexCodes/results}
+\input{results}
 
-\input{TexCodes/discussion}
+\input{discussion}
 
-\input{TexCodes/conclusions}
+\input{conclusions}
 
 
 \pagestyle{fancy}
@@ -121,6 +125,6 @@
 % Appendices are just more chapters, with different labeling (letters instead of numbers).
 \input{appendix.tex}
 
-\input{TexCodes/appendix}
+\input{appendix}
 
 \end{document}
